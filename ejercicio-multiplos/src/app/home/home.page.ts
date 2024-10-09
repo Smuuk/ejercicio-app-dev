@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { Firestore, addDoc , collection } from '@angular/fire/firestore';
 
 

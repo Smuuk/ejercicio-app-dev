@@ -14,7 +14,9 @@
 
   <ion-button expand="full" (click)="calcularSerie()">Mostrar Múltiplos</ion-button>
 
-  <div *ngFor="let num of numerosAr">
-    <p [ngStyle]="{'color': getColor(num)}">{{ num }}</p>
+  <div class="container-nums">
+    <div *ngFor="let num of numerosAr">
+      <p [ngStyle]="{'color': getColor(num)}">{{ num }}</p>
+    </div>
   </div>
 </ion-content>
