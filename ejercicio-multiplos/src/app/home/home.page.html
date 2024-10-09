@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Proyecto Ionic Múltiplos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Ingresa un número</ion-label>
+    <ion-input type="number" [(ngModel)]="numeroIngresado"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="calcularSerie()">Mostrar Múltiplos</ion-button>
+
+  <div *ngFor="let num of numerosAr">
+    <p [ngStyle]="{'color': getColor(num)}">{{ num }}</p>
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ejercicio-multiplos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
